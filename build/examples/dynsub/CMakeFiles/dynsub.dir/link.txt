@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/dynsub.dir/dynsub.c.o -o ../../bin/dynsub  -Wl,-rpath,/home/binbin/pangu/dds/cyclonedds_reader/build/lib:/home/binbin/pangu/dds/cyclonedds/iceoryx/build/install/prefix/lib ../../lib/libddsc.so.0.10.4 -Wl,-rpath-link,/home/binbin/pangu/dds/cyclonedds/iceoryx/build/install/prefix/lib 

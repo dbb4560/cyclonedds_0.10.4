@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/variouspub.dir/variouspub.c.o CMakeFiles/variouspub.dir/variouspub_types.c.o -o ../../bin/variouspub  -Wl,-rpath,/home/binbin/pangu/dds/cyclonedds_reader/build/lib:/home/binbin/pangu/dds/cyclonedds/iceoryx/build/install/prefix/lib ../../lib/libddsc.so.0.10.4 -Wl,-rpath-link,/home/binbin/pangu/dds/cyclonedds/iceoryx/build/install/prefix/lib 

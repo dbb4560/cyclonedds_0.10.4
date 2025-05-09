@@ -1,0 +1,80 @@
+Determining if the strlcpy exist failed with the following output:
+Change Dir: /home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1b4c9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1b4c9.dir/build.make CMakeFiles/cmTC_1b4c9.dir/build
+gmake[1]: Entering directory '/home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1b4c9.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=gnu99 -o CMakeFiles/cmTC_1b4c9.dir/CheckSymbolExists.c.o -c /home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘strlcpy’ undeclared (first use in this function); did you mean ‘strncpy’?
+    8 |   return ((int*)(&strlcpy))[argc];
+      |                   ^~~~~~~
+      |                   strncpy
+/home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_1b4c9.dir/build.make:78: CMakeFiles/cmTC_1b4c9.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_1b4c9/fast] Error 2
+
+
+File /home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcpy
+  return ((int*)(&strlcpy))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strlcat exist failed with the following output:
+Change Dir: /home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fcbf7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fcbf7.dir/build.make CMakeFiles/cmTC_fcbf7.dir/build
+gmake[1]: Entering directory '/home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fcbf7.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -std=gnu99 -o CMakeFiles/cmTC_fcbf7.dir/CheckSymbolExists.c.o -c /home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘strlcat’ undeclared (first use in this function); did you mean ‘strncat’?
+    8 |   return ((int*)(&strlcat))[argc];
+      |                   ^~~~~~~
+      |                   strncat
+/home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_fcbf7.dir/build.make:78: CMakeFiles/cmTC_fcbf7.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_fcbf7/fast] Error 2
+
+
+File /home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcat
+  return ((int*)(&strlcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test COMPILER_HAS_HIDDEN_INLINE_VISIBILITY failed with the following output:
+Change Dir: /home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e288a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e288a.dir/build.make CMakeFiles/cmTC_e288a.dir/build
+gmake[1]: Entering directory '/home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e288a.dir/src.c.o
+/usr/bin/cc -DCOMPILER_HAS_HIDDEN_INLINE_VISIBILITY  -fvisibility-inlines-hidden -std=gnu99 -o CMakeFiles/cmTC_e288a.dir/src.c.o -c /home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp/src.c
+cc1: warning: command-line option '-fvisibility-inlines-hidden' is valid for C++/ObjC++ but not for C
+Linking C executable cmTC_e288a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e288a.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_e288a.dir/src.c.o -o cmTC_e288a 
+gmake[1]: Leaving directory '/home/binbin/pangu/dds/cyclonedds_reader/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }

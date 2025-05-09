@@ -1,0 +1,7 @@
+<CycloneDDS xmlns="http://cyclonedds.io/config/v1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Domain id="any">
+        <SharedMemory>
+            <Enable>true</Enable>
+        </SharedMemory>
+    </Domain>
+</CycloneDDS>

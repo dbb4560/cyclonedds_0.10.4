@@ -1,0 +1,1 @@
+/usr/bin/cc -g CMakeFiles/RoundtripPong.dir/pong.c.o CMakeFiles/RoundtripPong.dir/RoundTrip.c.o -o ../../bin/RoundtripPong  -Wl,-rpath,/home/binbin/pangu/dds/cyclonedds_reader/build/lib:/home/binbin/pangu/dds/cyclonedds/iceoryx/build/install/prefix/lib ../../lib/libddsc.so.0.10.4 -Wl,-rpath-link,/home/binbin/pangu/dds/cyclonedds/iceoryx/build/install/prefix/lib 

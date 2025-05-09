@@ -1,0 +1,9 @@
+prefix=/home/binbin/pangu/dds/cyclonedds/iceoryx/build/install/prefix
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: CycloneDDS
+Description: Eclipse Cyclone DDS library
+Version: 0.10.4
+Libs: -L${libdir} -lddsc
+Cflags: -I${includedir}
